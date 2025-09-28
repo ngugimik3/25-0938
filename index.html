@@ -1,84 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Pet Adoption Centre</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      line-height: 1.6;
-    }
-    header, footer {
-      background-color: #2d6a4f;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 20px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    th, td {
-      border: 1px solid #333;
-      padding: 10px;
-      text-align: center;
-    }
-    caption {
-      caption-side: top;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    section, article {
-      margin-bottom: 20px;
-    }
-    img {
-      max-width: 300px;
-      border-radius: 10px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
 </head>
 <body>
+
   <!-- HEADER -->
   <header>
-    <h1>🐾 Pet Adoption Centre</h1>
+    <h1>Pet Adoption Centre</h1>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Our Services</a>
-      <a href="#products">Adoptable Pets</a>
-      <a href="#video">Tutorial</a>
-      <a href="#contact">Contact</a>
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="#home">Home</a> |
+      <a href="#services">Services</a> |
+      <a href="#products">Adoptable Pets</a> |
+      <a href="#video">Tutorial</a> |
+      <a href="#contact">Contact</a> |
+      <a href="https://github.com/yourusername" target="_blank">My GitHub</a>
     </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
+  <!-- MAIN -->
   <main>
-    <!-- INTRODUCTION -->
+    <!-- INTRO -->
     <section id="home">
-      <h2>Welcome to Our Adoption Centre</h2>
+      <h2>Welcome</h2>
       <p>
         When you adopt pets from our shelter, you give them a second chance at life. 
-        Adult pets are already housetrained and often calmer than young ones, saving you time and effort. 
-        Some dogs are even trained to assist with small chores like fetching items or accompanying you on walks.
+        Adult pets are already housetrained and often calmer than young ones.
       </p>
     </section>
 
@@ -94,16 +42,16 @@
       </ul>
     </section>
 
-    <!-- PRODUCT/SERVICE SHOWCASE -->
+    <!-- SHOWCASE -->
     <section id="products">
       <h2>Adoptable Pets Showcase</h2>
       <article>
-        <img src="https://www.akc.org/wp-content/uploads/2017/11/Doberman-Pinscher-standing-outdoors.jpg" alt="Rescued Doberman Dog">
-        <p>Example of a dog we rescued – Meet Bruno, a loving Doberman ready for adoption.</p>
+        <img src="pet.jpg" alt="Rescued dog photo" width="300">
+        <p>Example of a dog we rescued – Bruno, a loving Doberman ready for adoption.</p>
       </article>
 
-      <table style="border: 2px solid #333;">
-        <caption>Available Pets and Adoption Details</caption>
+      <table border="1">
+        <caption>Available Pets</caption>
         <tr>
           <th>Pet Name</th>
           <th>Adoption Fee</th>
@@ -112,35 +60,39 @@
         <tr>
           <td>Bruno (Dog)</td>
           <td>$50</td>
-          <td>⭐⭐⭐⭐⭐</td>
+          <td>5 Stars</td>
         </tr>
         <tr>
           <td>Milo (Cat)</td>
           <td>$30</td>
-          <td>⭐⭐⭐⭐</td>
+          <td>4 Stars</td>
         </tr>
         <tr>
           <td>Luna (Rabbit)</td>
           <td>$20</td>
-          <td>⭐⭐⭐</td>
+          <td>3 Stars</td>
         </tr>
       </table>
     </section>
 
-    <!-- VIDEO TUTORIAL -->
+    <!-- VIDEO -->
     <section id="video">
       <h2>Pet Care Tutorial</h2>
-      <video src="pet-tutorial.mp4" width="500" controls>
-        Your browser does not support the video tag.
-      </video>
-      <p>This video covers basic pet care tips, including feeding schedules, grooming, and training for newly adopted pets.</p>
+      <video src="pet-tutorial.mp4" width="500" controls></video>
+      <p>This video explains how to care for your newly adopted pet.</p>
     </section>
+
+    <!-- ASIDE -->
+    <aside>
+      <p>Tip: Adopting older pets can save you time because many are already trained!</p>
+    </aside>
   </main>
 
   <!-- FOOTER -->
   <footer id="contact">
     <p>Contact us: info@petadoptioncentre.com | +254 712 345 678</p>
-    <p>&copy; 2025 Pet Adoption Centre. All rights reserved.</p>
+    <p>&copy; 2025 Pet Adoption Centre</p>
   </footer>
+
 </body>
 </html>
