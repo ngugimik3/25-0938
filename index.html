@@ -1,24 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pet Adoption Centre</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:Arial,sans-serif;
+      background:#fdfdfd;
+      color:#333;
+      line-height:1.6;
+      background-image: url("https://shorturl.at/ajTw5");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    
+    header{
+      background:linear-gradient(135deg,orange,coral);
+      color:#fff;
+      padding:20px 10px 40px;
+      border-bottom-left-radius:30px;
+      border-bottom-right-radius:30px;
+      box-shadow:0 3px 6px rgba(0,0,0,0.2);
+    }
+    h1{
+      color:red;
+      text-align:center;
+      margin-bottom:10px;
+      font-size:2rem;
+      font-family:Arial,sans-serif;
+      letter-spacing:1px;
+    }
+    nav{text-align:center;margin-top:10px;}
+    nav a{
+      text-decoration:none;
+      color:white;
+      font-weight:bold;
+      margin:0 12px;
+      transition:.3s;
+      padding-bottom:3px;
+    }
+    nav a:hover{color:#fff8e1;border-bottom:2px solid #fff;}
+    main{max-width:1000px;margin:40px auto;padding:0 20px;}
+    section{
+      margin-bottom:50px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    h2{text-align:center;color:orange;margin-bottom:15px;font-size:1.8rem;text-transform:uppercase;}
+    p{text-align:center;margin-bottom:15px;font-size:16px;line-height:1.8;}
+    ul{list-style:square;max-width:600px;margin:0 auto 20px;padding-left:20px;}
+    ul li{margin:8px 0;font-weight:500;}
+    .highlight{
+      font-weight:bold;
+      background:yellow;
+      font-size:20px;
+      padding:5px 10px;
+      border-radius:5px;
+      display:inline-block;
+      box-shadow:0 2px 4px rgba(0,0,0,0.2);
+    }
+    .box-model{
+      margin:20px 0;
+      padding:15px;
+      border:2px solid #000;
+      background:#f7f7f7;
+      border-radius:10px;
+      text-align:center;
+    }
+    .banner{
+      height:220px;
+      background:url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1169&q=80') no-repeat center/cover;
+      border-radius:10px;
+      margin:30px 0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      text-shadow:2px 2px 4px rgba(0,0,0,0.7);
+      font-size:1.7rem;
+      font-weight:bold;
+    }
+    table{
+      margin:20px auto;
+      border-collapse:collapse;
+      width:85%;
+      background:#fff;
+      box-shadow:0 3px 8px rgba(0,0,0,0.1);
+      border-radius:8px;
+      overflow:hidden;
+    }
+    caption{font-weight:bold;color:orange;margin-bottom:10px;text-transform:uppercase;}
+    th,td{padding:12px 15px;text-align:center;border-bottom:1px solid #ddd;}
+    th{background:#ff9800;color:#fff;}
+    tr:hover{background:#fff3e0;}
+    article{text-align:center;margin-bottom:20px;}
+    img{border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,0.2);transition:.3s;}
+    img:hover{transform:scale(1.05);}
+    .transition-button{
+      background:blue;
+      color:#fff;
+      border:none;
+      padding:12px 25px;
+      border-radius:5px;
+      cursor:pointer;
+      transition:.5s;
+      display:block;
+      margin:25px auto;
+      font-weight:bold;
+      box-shadow:0 3px 6px rgba(0,0,0,0.2);
+    }
+    .transition-button:hover{background:green;}
+    .two-column-layout{
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px;
+      margin:20px 0;
+    }
+    .column{
+      flex:1;
+      min-width:300px;
+      padding:15px;
+      background:#fff8e1;
+      border-radius:8px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    }
+    iframe{
+      display:block;
+      margin:20px auto;
+      border-radius:10px;
+      box-shadow:0 3px 10px rgba(0,0,0,0.2);
+      max-width:100%;
+    }
+    aside{
+      background:#fff8e1;
+      border-left:5px solid orange;
+      padding:15px;
+      margin-top:20px;
+      text-align:center;
+      font-style:italic;
+      border-radius:5px;
+    }
+    footer{
+      text-align:center;
+      margin-top:40px;
+      padding:20px;
+      background:#333;
+      color:white;
+      border-top-left-radius:20px;
+      border-top-right-radius:20px;
+    }
+    footer p{
+      margin:5px 0;
+      color:#f9f9f9;
+    }
+    footer a{
+      color:orange;
+      text-decoration:none;
+    }
+    @media (max-width:600px){
+      h1{font-size:1.5rem;}
+      h2{font-size:1.4rem;}
+      table{width:100%;}
+      nav{display:flex;flex-wrap:wrap;justify-content:center;}
+      nav a{margin:5px;}
+      body{background:lightblue;}
+    }
+  </style>
 </head>
 <body>
-  
- <style>
-    h1 {
-      color: orange;
-      font: bold;
-      text-align: center;
-    }
-p{
- font: bold;
- color:green;
-alignment:centre;
-}
-  </style>
-
   <header>
     <h1>Pet Adoption Centre</h1>
     <nav>
@@ -30,16 +185,13 @@ alignment:centre;
       <a href="https://github.com/ngugimik3" target="_blank">My GitHub</a>
     </nav>
   </header>
-
   <main>
     <section id="home">
       <h2>Welcome</h2>
-      <p>
-        When you adopt pets from our shelter, you give them a second chance at life. 
-        Adult pets are already housetrained and often calmer than young ones.
-      </p>
+      <p>When you adopt pets from our shelter, you give them a second chance at life. Adult pets are often calmer and already housetrained.</p>
+      <p class="highlight">Special Offer: All adoption fees are 20% off this month!</p>
     </section>
-
+    <div class="banner">Find Your Perfect Companion Today!</div>
     <section id="services">
       <h2>Our Services</h2>
       <ul>
@@ -48,18 +200,21 @@ alignment:centre;
         <li>Pet Grooming and Training</li>
         <li>Rescue and Rehabilitation</li>
         <li>Pet Care Education Workshops</li>
-        <li>Pet emergency services</li>
+        <li>Pet Emergency Services</li>
       </ul>
+      <button class="transition-button">Learn More About Our Services</button>
     </section>
-
+    <div class="box-model">
+      <h3>Adoption Process</h3>
+      <p>Our adoption process is simple and ensures the best match between pets and families.</p>
+    </div>
     <section id="products">
       <h2>Adoptable Pets Showcase</h2>
       <article>
-        <img src="https://surl.li/wdftup" alt="Rescued dog photo" width="300">
+        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=662&q=80" alt="Rescued dog photo" width="300">
         <p>Example of a dog we rescued – Bruno, a loving Doberman ready for adoption.</p>
       </article>
-
-      <table border="1">
+      <table>
         <caption>Available Pets</caption>
         <tr>
           <th>Pet Name</th>
@@ -68,40 +223,40 @@ alignment:centre;
         </tr>
         <tr>
           <td>Bruno (Dog)</td>
-          <td>$50</td>
-          <td>5 Stars</td>
+          <td>ksh 50000</td>
+          <td>★★★★★</td>
         </tr>
         <tr>
           <td>Milo (Cat)</td>
-          <td>$30</td>
-          <td>4 Stars</td>
+          <td>ksh 30000</td>
+          <td>★★★★☆</td>
         </tr>
         <tr>
           <td>Luna (Rabbit)</td>
-          <td>$20</td>
-          <td>3 Stars</td>
+          <td>ksh 20000</td>
+          <td>★★★☆☆</td>
         </tr>
       </table>
     </section>
-
+    <section class="two-column-layout">
+      <div class="column">
+        <h3>Why Adopt?</h3>
+        <p>Adopting a pet saves lives and gives animals a second chance at happiness.</p>
+      </div>
+      <div class="column">
+        <h3>Adoption Requirements</h3>
+        <p>We require a stable home environment and commitment to pet care.</p>
+      </div>
+    </section>
     <section id="video">
       <h2>Pet Care Tutorial</h2>
-      <<iframe width="560" height="315" src="https://www.youtube.com/embed/Tn3lZE0rRBs?si=2OcB87M7B5wx6dWh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Tn3lZE0rRBs" allowfullscreen></iframe>
       <p>This video explains how to care for your newly adopted pet.</p>
     </section>
-
-    <aside>
-      <p>Tip: Adopting older pets can save you time because many are already trained!</p>
-    </aside>
   </main>
-
   <footer id="contact">
-    <p>Contact us: mikewainaina21@gmail.com | +254 745 098 345</p>
+    <p>Contact us: <a href="mailto:mikewainaina21@gmail.com">mikewainaina21@gmail.com</a> | +254 745 098 345</p>
     <p>&copy; 2025 Pet Adoption Centre</p>
   </footer>
-
 </body>
 </html>
-
-
-
