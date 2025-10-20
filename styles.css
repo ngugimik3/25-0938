@@ -5,17 +5,20 @@ body {
      background-color: white;
      background-image: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
 }
- table {
-     width: 100%;
-     border-collapse: collapse;
-     margin-bottom: 20px;
-     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: scale(1.1); /* enlarges entire table visually */
+    transform-origin: center;
 }
- th, td {
-     border: 1px solid #a82b2b;
-     padding: 8px;
-     text-align: left;
+th, td {
+    padding: 14px;
+    font-size: 18px;
 }
+
  th {
      background-color: pink;
      font-weight: bold;
