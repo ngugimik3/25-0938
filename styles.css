@@ -11,7 +11,7 @@ table {
     border-collapse: collapse;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transform: scale(1.1); /* enlarges entire table visually */
+    transform: scale(1.1); 
     transform-origin: center;
 }
 th, td {
